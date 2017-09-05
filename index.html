@@ -30,34 +30,33 @@
    <div class="main parallax-window" data-parallax="scroll" data-image-src="img/main-bg.jpg">
    <div class="main-overlay"></div> 
      <div class="wrapper">
-      <div class="main-header">
-      <h1>Islam Akhmetshin</h1>
-      <div class="main-line"></div>
-      <p>Вёрстка на HTML, CSS, JS<br>
-      Разработка сайтов под ключЪ
-       </p>
-      </div> 
-    </div>
-    <a class="main-down slowly" href="#portfolio"><i class="icon-down"></i></a>
+       <div class="main-header">
+         <h1 class="wow bounceInDown" >Islam Akhmetshin</h1>
+         <div class="main-line"></div>
+          <p class="wow bounceInUp" data-wow-delay="0.5s">Вёрстка на HTML, CSS, JS<br>
+            Разработка сайтов под ключЪ</p>
+       </div> 
+     </div>
+    <a class="main-down slowly wow wobble" data-wow-delay="1.5s" href="#portfolio"><i class="icon-down"></i></a>
    </div> 
    <div class="portfolio" id="portfolio">
      <div class="container">
       <h2 class="section-header">Портфолио</h2>
      <div class="row">
       <div class="col-md-4">
-        <div class="portfolio-block">
+        <div class="portfolio-block wow fadeInUp">
         <img src="img/Portfolio/1.jpg" alt="Pабота №1">
         <a class="link cd-modal-trigger" data-work='work-1' href="#0">Смотреть работу</a>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="portfolio-block">
+        <div class="portfolio-block wow fadeInUp" data-wow-duration="1.5s">
          <img src="img/Portfolio/2.jpg" alt="Pабота №2">
-        <a class="link cd-modal-trigger" data-work='work-2' href="#0">Смотреть работу</a>
+         <a class="link cd-modal-trigger" data-work='work-2' href="#0">Смотреть работу</a>
         </div>
       </div>
       <div class="col-md-4">
-       <div class="portfolio-block">
+       <div class="portfolio-block wow fadeInUp" data-wow-duration="2s">
         <img src="img/Portfolio/3.jpg" alt="Pабота №3">
         <a class="link cd-modal-trigger" data-work='work-3' href="#0">Смотреть работу</a>
        </div>
@@ -130,6 +129,7 @@
       });
      }); 
     </script>
+    <link rel="stylesheet" href="css/animate.css">
     <script>
      $(document).ready(function() {
 
@@ -145,6 +145,10 @@
        $('body,html').animate({scrollTop: top}, 3000);
       });
      }); 
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
     </script>
   </body>
 </html>
